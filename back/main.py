@@ -19,7 +19,7 @@ SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
 
 # ---------------------------------------------------------
-# 2. THE DATABASE TABLE ( The Model )jsjkfea ahmed drid çisnkaddqfz
+# 2. THE DATABASE TABLE ( The Model )
 # This creates a table called "logs" automatically
 # ---------------------------------------------------------
 class LogDB(Base):

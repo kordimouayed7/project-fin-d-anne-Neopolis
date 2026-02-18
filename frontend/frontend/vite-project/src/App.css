@@ -1,0 +1,101 @@
+/* Si vous avez déjà ces lignes dans index.css, elles sont optionnelles ici, 
+   mais nécessaires si ce fichier est traité isolément */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --- LOGIN PAGE STYLES --- */
+
+.login-wrapper {
+  @apply min-h-screen w-full flex items-center justify-center bg-[#F9F7F5] font-sans;
+}
+
+.login-card {
+  @apply w-full max-w-[420px] bg-white rounded-[32px] shadow-[0_20px_40px_-15px_rgba(0,0,0,0.05)] p-10 mx-4;
+}
+
+.icon-header {
+  @apply flex justify-center mb-6;
+}
+
+.icon-circle {
+  @apply w-16 h-16 bg-[#EFE8DE] rounded-full flex items-center justify-center text-[#8C7E72] shadow-inner;
+}
+
+.login-headings {
+  @apply text-center mb-10;
+}
+
+.login-title {
+  @apply text-2xl font-bold text-[#4A4238] mb-2 tracking-tight;
+}
+
+.login-subtitle {
+  @apply text-[#9CA3AF] text-sm font-medium;
+}
+
+.login-form {
+  @apply space-y-6;
+}
+
+.input-group {
+  @apply group relative;
+}
+
+.form-input {
+  @apply w-full px-5 py-4 bg-transparent border border-[#E5E7EB] rounded-2xl text-[#4B5563] placeholder-[#9CA3AF] text-sm focus:outline-none focus:border-[#D4B491] focus:ring-4 focus:ring-[#D4B491]/10 transition-all duration-300;
+}
+
+.eye-btn {
+  @apply absolute right-4 top-1/2 -translate-y-1/2 text-[#9CA3AF] hover:text-[#6B5E54] transition-colors;
+}
+
+.options-row {
+  @apply flex items-center justify-between text-sm px-1;
+}
+
+.checkbox-label {
+  @apply flex items-center gap-2 text-[#8C7E72] cursor-pointer hover:text-[#5d534b] transition-colors select-none;
+}
+
+.checkbox-input {
+  @apply w-4 h-4 rounded border-[#D1D5DB] text-[#D4B491] focus:ring-[#D4B491] focus:ring-offset-0 bg-white;
+}
+
+.forgot-link {
+  @apply font-medium text-[#8C7E72] hover:text-[#5d534b] transition-colors;
+}
+
+.btn-primary {
+  @apply w-full py-4 bg-[#E3CBA8] hover:bg-[#D6BD96] text-white font-bold rounded-2xl shadow-lg shadow-[#E3CBA8]/20 transform transition-all duration-200 active:scale-[0.98] mt-2;
+}
+
+/* --- DASHBOARD STYLES --- */
+
+.dashboard-layout {
+  @apply flex min-h-screen bg-slate-50 font-sans text-slate-900;
+}
+
+.sidebar {
+  @apply w-64 bg-slate-50 border-r border-slate-200 flex flex-col hidden md:flex;
+}
+
+.nav-item {
+  @apply w-full flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-md transition-colors text-slate-600 hover:bg-slate-100 hover:text-slate-900;
+}
+
+.nav-item.active {
+  @apply bg-white text-indigo-600 shadow-sm border border-slate-200;
+}
+
+.kpi-card {
+  @apply bg-white rounded border border-slate-200 p-5 shadow-sm;
+}
+
+.badge-trend-up {
+  @apply text-xs font-medium px-1.5 py-0.5 rounded bg-emerald-50 text-emerald-700;
+}
+
+.badge-trend-down {
+  @apply text-xs font-medium px-1.5 py-0.5 rounded bg-amber-50 text-amber-700;
+}
